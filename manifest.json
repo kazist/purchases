@@ -1,0 +1,12 @@
+{
+    "name": "kazist\/purchases",
+    "title": "Purchases",
+    "icon": "icons\\\/purchases.png",
+    "extension": "component",
+    "path": "purchases\/",
+    "description": "  Purchases Information",
+    "version": 1,
+    "is_core": 0,
+    "system_tracking_id": 0,
+    "is_modified": 0
+}
