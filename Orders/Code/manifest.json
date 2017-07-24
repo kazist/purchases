@@ -1,0 +1,13 @@
+{
+    "name": "orders",
+    "title": "Purchases Orders",
+    "explanation": "  Purchases Orders",
+    "description": "  Purchases Orders",
+    "version": 8,
+    "has_view": "1",
+    "tie_field": "0",
+    "email_on_new": "0",
+    "email_on_edit": "0",
+    "email_on_delete": "0",
+    "date_file_modified": "2017-07-24 16:06:24"
+}
