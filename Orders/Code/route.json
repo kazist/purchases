@@ -1,0 +1,125 @@
+{
+    "backend": [{
+            "title": "General Tasks",
+            "description": "General Tasks.",
+            "controller": "Purchases\\Orders\\Code\\Controllers\\Admin\\OrdersController::taskAction",
+            "unique_name": "admin.purchases.orders.task",
+            "route": "admin/purchases/orders/task",
+            "permissions": "can_write",
+            "arguments": "",
+            "keywords": "orders, task",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_write"],
+                "ADMIN": ["can_write"]
+            }
+        }, {
+            "title": "Order List",
+            "description": "Management of Orders.",
+            "controller": "Purchases\\Orders\\Code\\Controllers\\Admin\\OrdersController::indexAction",
+            "permissions": "can_view, can_viewown",
+            "unique_name": "admin.purchases.orders",
+            "route": "admin/purchases/orders",
+            "arguments": "",
+            "keywords": "order, list",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Add Order  ",
+            "description": "Add Order .",
+            "controller": "Purchases\\Orders\\Code\\Controllers\\Admin\\OrdersController::addAction",
+            "unique_name": "admin.purchases.orders.add",
+            "route": "admin/purchases/orders/add",
+            "permissions": "can_add",
+            "arguments": {},
+            "keywords": "order, add",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add"],
+                "ADMIN": ["can_add"]
+            }
+        }, {
+            "title": "Edit Order {{ item.name }}",
+            "description": "Edit Order {{ item.name }}.",
+            "controller": "Purchases\\Orders\\Code\\Controllers\\Admin\\OrdersController::editAction",
+            "unique_name": "admin.purchases.orders.edit",
+            "route": "admin/purchases/orders/edit/{id}",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "order, list, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }, {
+            "title": "Order Detail: {{ item.name }}",
+            "description": "Order Detail: {{ item.name }}",
+            "controller": "Purchases\\Orders\\Code\\Controllers\\Admin\\OrdersController::detailAction",
+            "unique_name": "admin.purchases.orders.detail",
+            "route": "admin/purchases/orders/detail/{id}",
+            "permissions": "can_view, can_viewown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "order, list, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_view", "can_viewown"],
+                "ADMIN": ["can_view", "can_viewown"],
+                "MODERATOR": ["can_view", "can_viewown"],
+                "USER": ["can_view", "can_viewown"]
+            }
+        }, {
+            "title": "Order Delete: {{ item.name }}",
+            "description": "Order Delete: {{ item.name }}",
+            "controller": "Purchases\\Orders\\Code\\Controllers\\Admin\\OrdersController::deleteAction",
+            "unique_name": "admin.purchases.orders.delete",
+            "route": "admin/purchases/orders/delete/{id}",
+            "permissions": "can_delete, can_deleteown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "order, delete, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_delete", "can_deleteown"],
+                "ADMIN": ["can_delete", "can_deleteown"]
+            }
+        }, {
+            "title": "Order Save: {{ item.name }}",
+            "description": "Order Save: {{ item.name }}",
+            "controller": "Purchases\\Orders\\Code\\Controllers\\Admin\\OrdersController::saveAction",
+            "unique_name": "admin.purchases.orders.save",
+            "route": "admin/purchases/orders/save",
+            "permissions": "can_add, can_write, can_writeown",
+            "arguments": {
+                "id": null
+            },
+            "keywords": "order, save, {{ item.name }}",
+            "priority": "0.5",
+            "changefreq": "weekly",
+            "login_required": 1,
+            "roles": {
+                "SUPER_ADMIN": ["can_add", "can_write", "can_writeown"],
+                "ADMIN": ["can_add", "can_write", "can_writeown"]
+            }
+        }]
+} 	
