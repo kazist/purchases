@@ -1,0 +1,16 @@
+{
+    "title": "Purchases",
+    "description": "Purchases",
+    "alias": "purchases",
+    "icon": "fa fa-shopping-cart",
+    "home_link": "purchases\/orders",
+    "path": "applications/Purchases",
+    "is_core": "1",
+    "menulist": [{
+            "title": "Purchases",
+            "alias": "admin_purchases_orders",
+            "url": "admin/purchases/orders",
+            "icon": "fa fa-shopping-cart",
+            "children": []
+        }]
+}
